@@ -27,5 +27,12 @@
         margin-top: 20px;
         font-weight: 300;
         font-size: 14px;
+        a {
+            color: #FF0000;
+            text-transform: uppercase;
+            &:hover {
+                color: #0D0D0D;
+            }
+        }
     }
 }
