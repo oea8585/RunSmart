@@ -1,7 +1,6 @@
 .container__slider {
     max-width: 950px;
     margin: 80px auto;
-    // display: flex;
     position: relative;
 }
 .slider {
@@ -14,35 +13,29 @@
     }
     &__button-next {
         display: block;
-        background-color: #ffffff;
+        background-color: rgba($color: #ffffff, $alpha: 0);
         border: none;
-        z-index: 2;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: -10px;
-        background-color: #ffffff;
-        border: none;
-        img {
-            width: 31px;
-            height: 50px;
-        }
+        // img {
+        //     width: 31px;
+        //     height: 50px;
+        // }
     }
     &__button-prev {
         display: block;
-        background-color: #ffffff;
         border: none;
-        z-index: 2;
+        background-color: rgba($color: #ffffff, $alpha: 0);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: -10px;
-        border: none;
-        background-color: #ffffff;
-        img {
-            width: 31px;
-            height: 50px;
-        }
+        // img {
+        //     width: 31px;
+        //     height: 50px;
+        // }
     }
 
 }

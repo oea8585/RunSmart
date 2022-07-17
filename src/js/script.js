@@ -14,6 +14,8 @@
 //         ]
 //       });
 //   });
+// код для слайдера
+
 const images = document.querySelectorAll('.slider .slider__line img');
 const sliderLine = document.querySelector('.slider .slider__line');
 let count = 0;
@@ -55,3 +57,28 @@ document.querySelector('.slider__button-next').addEventListener('click', functio
 function rollSlider(){
     sliderLine.style.transform = 'translate(-' +count * width+ 'px)';
 }
+// код для переключения табов
+
+let tab = function () {
+    let tabItem = document.querySelectorAll('.catalog__tab'),
+        tabContent = document.querySelectorAll('.catalog__content'),
+        tabName;
+        tabItem.forEach(item => {
+            item.addEventListener('click', selectTab)
+        })
+
+        function selectTab() {
+            tabItem.forEach(item =>{
+                item.classList.remove('catalog__tab_active');
+            })
+            this.classList.add('catalog__tab_active');
+            tabName = this.getAttribute('id');
+            selectTabContent(tabName);
+        }
+        function selectTabContent(tabName) {
+            tabContent.forEach(item => {
+                item.classList.contains(tabName)? item.classList.add('catalog__content_active') : item.classList.remove('catalog__content_active');
+            })
+        }
+};
+tab()
