@@ -21,7 +21,7 @@
         cursor: pointer;
         transition: 0.5 all;
         &:hover {
-            box-shadow: 3px 3px 20px $main-color;
+            box-shadow: 3px 3px 30px $second-color;
             border: none;
         }
         transform: skewX(-25deg);
